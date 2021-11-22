@@ -100,7 +100,7 @@ header h2{
   font-size: 18px;
 }
 header h2 span{
-  color: #FFAA00;
+  color: var(--6);
   letter-spacing: .3em;
 }
 main{
@@ -135,6 +135,138 @@ article{
   height: 30px;
   margin: 2px;
   box-shadow: 1px 1px 0px 1px #555555;
+}
+.buttonBold{
+  font-weight: 700;
+  text-shadow: 1px 1px #555555;
+}
+.options button:nth-of-type(1){
+  color: var(--0);
+}
+.options button:nth-of-type(1):hover{
+  background-color: var(--0);
+  color: var(--f);
+}
+.options button:nth-of-type(2){
+  color: var(--1);
+}
+.options button:nth-of-type(2):hover{
+  background-color: var(--1);
+  color: var(--f);
+}
+.options button:nth-of-type(3){
+  color: var(--2);
+}
+.options button:nth-of-type(3):hover{
+  background-color: var(--2);
+  color: var(--0);
+}
+.options button:nth-of-type(4){
+  color: var(--3);
+}
+.options button:nth-of-type(4):hover{
+  background-color: var(--3);
+  color: var(--0);
+}
+.options button:nth-of-type(5){
+  color: var(--4);
+}
+.options button:nth-of-type(5):hover{
+  background-color: var(--4);
+  color: var(--0);
+}
+.options button:nth-of-type(6){
+  color: var(--5);
+}
+.options button:nth-of-type(6):hover{
+  background-color: var(--5);
+  color: var(--0);
+}
+.options button:nth-of-type(7){
+  color: var(--6);
+}
+.options button:nth-of-type(7):hover{
+  background-color: var(--6);
+  color: var(--0);
+}
+.options button:nth-of-type(8){
+  color: var(--7);
+}
+.options button:nth-of-type(8):hover{
+  background-color: var(--7);
+  color: var(--0);
+}
+.options button:nth-of-type(9){
+  color: var(--8);
+}
+.options button:nth-of-type(9):hover{
+  background-color: var(--8);
+  color: var(--0);
+}
+.options button:nth-of-type(10){
+  color: var(--9);
+}
+.options button:nth-of-type(10):hover{
+  background-color: var(--9);
+  color: var(--0);
+}
+.options button:nth-of-type(11){
+  color: var(--a);
+}
+.options button:nth-of-type(11):hover{
+  background-color: var(--a);
+  color: var(--0);
+}
+.options button:nth-of-type(12){
+  color: var(--b);
+}
+.options button:nth-of-type(12):hover{
+  background-color: var(--b);
+  color: var(--0);
+}
+.options button:nth-of-type(13){
+  color: var(--c);
+}
+.options button:nth-of-type(13):hover{
+  background-color: var(--c);
+  color: var(--0);
+}
+.options button:nth-of-type(14){
+  color: var(--d);
+}
+.options button:nth-of-type(14):hover{
+  background-color: var(--d);
+  color: var(--0);
+}
+.options button:nth-of-type(15){
+  color: var(--e);
+}
+.options button:nth-of-type(15):hover{
+  background-color: var(--e);
+  color: var(--0);
+}
+.options button:nth-of-type(16){
+  color: var(--f);
+}
+.options button:nth-of-type(16):hover{
+  background-color: var(--f);
+  color: var(--0);
+}
+.options button:nth-of-type(17){
+  
+}
+.options button:nth-of-type(19){
+  text-decoration:line-through;
+}
+.options button:nth-of-type(20){
+  text-decoration: underline;
+}
+.options button:nth-of-type(21){
+  font-style: italic;
+}
+.options button:active{
+  background-color: var(--4);
+  color: var(--f);
 }
 .texts {
   width: calc(1000px - 150px);
