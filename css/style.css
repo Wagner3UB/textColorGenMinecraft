@@ -2,6 +2,11 @@
 /*font-family: 'Lora', serif;
   font-family: 'Montserrat', sans-serif;
 */
+@font-face {
+  font-family: "minecraftfont";
+  src: url(/public/fonts/1412/minecraftfont.eot);
+  src: local("minecraftfont"), url(http://fontsforweb.com/public/fonts/1412/minecraftfont.ttf) format("truetype");
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -15,9 +20,11 @@ body {
 }
    
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', serif;
+  font-family: 'minecraftfont', serif;
   font-weight: 700;
   line-height: 1.5em;
+  color: #fff;
+  text-shadow: 3px 3px  black;
 
 }
 a:link, a:visited {
@@ -27,28 +34,67 @@ a:link, a:visited {
   line-height: 1.5em;
 }
 header{
-  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 5%;
+  margin: 10px 5%;
 }
 header img{
   display: inline-block;
-  width: 300px;
 }
 header div{
   display: inline-block;
   text-align: center;
 }
+header h1{
+  font-size: 36px;
+}
+header h1 span{
+  text-shadow: 3px 3px #000;
+}
+header h1 span:nth-child(1){
+  color: #0000AA;
+}
+header h1 span:nth-child(2){
+  color: #00AA00;
+}
+header h1 span:nth-child(3){
+  color: #00AAAA;
+}
+header h1 span:nth-child(4){
+  color: #AA0000;
+}
+header h1 span:nth-child(5){
+  color: #AA00AA;
+}
+header h1 span:nth-child(6){
+  color: #FFAA00;
+}
+header h1 span:nth-child(7){
+  color: #AAAAAA;
+}
+header h1 span:nth-child(8){
+  color: #555555;
+}
+header h1 span:nth-child(9){
+  color: #5555FF;
+}
+header h2{
+  font-size: 18px;
+}
+header h2 span{
+  color: #FFAA00;
+  letter-spacing: .3em;
+}
 main{
-  height: 90vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 article{
-  width: 50%;
+  width: 1000px;
   height: 80%;
-  background-color: tomato;
+  border-radius: 5px;
+  background-color: #999999cc;
 }
