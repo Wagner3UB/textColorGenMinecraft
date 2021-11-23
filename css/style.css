@@ -264,11 +264,22 @@ article{
 .options button:nth-of-type(21){
   font-style: italic;
 }
-.options button:active{
-  background-color: var(--4);
-  color: var(--f);
-}
 .texts {
   width: calc(1000px - 150px);
   background-color: #555555aa;
+}
+.texts textarea, .preview{
+  width: calc(100% - 20px);
+  height: 100px;
+  background-color: ivory;
+  margin: 10px;
+}
+.texts h2{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* LETTERS STYLE */
+.boldText{
+  font-weight: 700;
 }

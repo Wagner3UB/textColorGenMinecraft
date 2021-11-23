@@ -37,7 +37,7 @@
 
 <body>
 	<header>
-		<img src="img/logo-test.jpg" alt="">
+		<img src="img/minecraft.png" alt="Minecraft logo">
 		<div>
 			<h1>ColorFulText
 				<span>G</span>
@@ -52,41 +52,46 @@
 			</h1>
 			<h2>Your <span>Minecraft</span> nick/text as you allways wish!</h2>
 		</div>
-		<a href="http://"><img src="img/logo-test.jpg" alt=""></a>
+		<a href="http://"><img src="img/grass.png" alt="Minecraft grass block"></a>
 	</header>
 	<main>
 		<article>
 			<section class="leftBox">
 				<div class="options">
-					<button class="buttonBold" value="&0">&0</button>
-					<button class="buttonBold" value="&1">&1</button>
-					<button class="buttonBold"  value="&2">&2</button>
-					<button class="buttonBold"  value="&3">&3</button>
-					<button class="buttonBold"  value="&4">&4</button>
-					<button class="buttonBold"  value="&5">&5</button>
-					<button class="buttonBold"  value="&6">&6</button>
-					<button class="buttonBold"  value="&7">&7</button>
-					<button class="buttonBold"  value="&8">&8</button>
-					<button class="buttonBold"  value="&9">&9</button>
-					<button class="buttonBold"  value="&a">&a</button>
-					<button class="buttonBold"  value="&b">&b</button>
-					<button class="buttonBold"  value="&c">&c</button>
-					<button class="buttonBold"  value="&d">&d</button>
-					<button title="Yellow" class="buttonBold"  value="&e">&e</button>
-					<button title="White" class="buttonBold"  value="&f">&f</button >
-					<button title="Ofuscated" value="&k">&k</button>
-					<button title="Bold" class="buttonBold"  value="&l">&l</button>
-					<button title="line-through" value="&m">&m</button>
-					<button title="underline" value="&n">&n</button>
-					<button title="Italic" value="&o">&o</button>
-					<button title="Reset" value="&r">&r</button>
+					<button onclick="itemValue(this)" class="buttonBold" value="&0">&0</button>
+					<button onclick="itemValue(this)" class="buttonBold" value="&1">&1</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&2">&2</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&3">&3</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&4">&4</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&5">&5</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&6">&6</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&7">&7</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&8">&8</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&9">&9</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&a">&a</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&b">&b</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&c">&c</button>
+					<button onclick="itemValue(this)" class="buttonBold"  value="&d">&d</button>
+					<button onclick="itemValue(this)" title="Yellow" class="buttonBold"  value="&e">&e</button>
+					<button onclick="itemValue(this)" title="White" class="buttonBold"  value="&f">&f</button >
+					<button onclick="itemValue(this)"  title="Ofuscated" value="&k">&k</button>
+					<button onclick="itemValue(this)" title="Bold" class="buttonBold"  value="&l">&l</button>
+					<button onclick="itemValue(this)" title="line-through" value="&m">&m</button>
+					<button onclick="itemValue(this)" title="underline" value="&n">&n</button>
+					<button onclick="itemValue(this)" title="Italic" value="&o">&o</button>
+					<button onclick="itemValue(this)" title="Reset" value="&r">&r</button>
 				</div>
 			</section>
 			<section class="texts">
-				<textarea name="" id=""></textarea>
-				<div class="preview"></div>
+				<h2>Code line</h2>
+				<textarea></textarea>
+				<h2>Text Preview</h2>
+				<div class="preview">
+					<p class=""></p>
+				</div>
 				<button class="generate"></button>
 				<button type="reset"></button>
+				<input type="color">
 			</section>
 		</article>
 	</main>
