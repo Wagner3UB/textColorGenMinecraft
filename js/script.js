@@ -1,6 +1,7 @@
-let textArea = document.querySelector(".texts textarea").innerHTML;
-
-const itemValue = (button) => {
+ 
+  const itemValue = (button) => {
+    let textArea = document.querySelector(".texts textarea").value;
+  console.log(textArea);
   let listButtons = document.querySelector(".options");
   let oneButton = listButtons.getElementsByTagName("button");
   for (i=0; i<oneButton.length; i++ ){
@@ -8,36 +9,28 @@ const itemValue = (button) => {
   }
   let buttonValue = button.value;
   textArea += buttonValue;
-  document.querySelector(".texts textarea").innerHTML = textArea;
+  document.querySelector(".texts textarea").value = textArea;
   console.log(buttonValue);
-
-  switch (buttonValue) {
-    case "&0":
-      document.querySelector(".preview p").innerHTML += '<span class="0"><span>'; 
-      break;
-    case "&1":
-      document.querySelector(".preview p").innerHTML += '<span class="1"><span>'; 
-      break;
-
-  }
+  console.log(textArea);
 };
-const letterKeyboard = (item) =>{
-  item = item || window.event;
-  let code = item.which || item.keyCode;
-  console.log(code);
-  console.log(String.fromCharCode(code));
-
-  let valueKey = document.querySelector("textarea").value;
-  if(code == 8){
-    let tamanho = document.querySelector(".preview p").innerHTML.length;
-    document.querySelector(".preview p").innerHTML = document.querySelector(".preview p").innerHTML.slice(0,--tamanho);
-    
-  } else {
-    if(document.querySelector(".preview p").innerHTML == ''){
-    document.querySelector(".preview p").innerHTML += valueKey;
-    } else {
-    document.querySelector(".preview p").innerHTML += String.fromCharCode(code);
-    }
+const generate = () => {
+  let textArea = document.querySelector(".texts textarea").value;
+  console.log(textArea.indexOf("&0"));
+while(document.querySelector(".preview p").innerText.indexOf("&0") >= 0){
+    if(textArea.indexOf("&") >= 0){
+    document.querySelector(".preview p").innerText = '<span class="';
+    console.log("textarea " + textArea);
+  }; 
+  if (textArea.indexOf("&0") >= 0){
+    document.querySelector(".preview p").innerText += "black " ;
+  };
+  if (textArea.indexOf("&0")+1 !== "&"){
+    document.querySelector(".preview p").innerText += '">';
   }
 }
+
+
+};
+
+addEventListener('keyup', generate);
 

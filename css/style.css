@@ -140,7 +140,7 @@ article{
   font-weight: 700;
   text-shadow: 1px 1px #555555;
 }
-.options button:nth-of-type(1){
+.black, .options button:nth-of-type(1){
   color: var(--0);
 }
 .options button:nth-of-type(1):hover{
