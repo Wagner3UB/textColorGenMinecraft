@@ -8,7 +8,6 @@ const itemValue = (button) => {
   }
   let buttonValue = button.value;
   textArea += buttonValue;
-  document.querySelector(".texts textarea").innerHTML = textArea;
   console.log(buttonValue);
 
   switch (buttonValue) {
@@ -20,6 +19,25 @@ const itemValue = (button) => {
       break;
 
   }
-
 };
+const letterKeyboard = (item) =>{
+  item = item || window.event;
+  let code = item.which || item.keyCode;
+  console.log(code);
+  console.log(String.fromCharCode(code));
+
+  let valueKey = document.querySelector("textarea").value;
+  if(code == 8){
+    let tamanho = document.querySelector(".preview p").innerHTML.length;
+    document.querySelector(".preview p").innerHTML = document.querySelector(".preview p").innerHTML.slice(0,--tamanho);
+  } else {
+    if(document.querySelector(".preview p").innerHTML == ''){
+      document.querySelector(".preview p").innerHTML += valueKey;
+  } else {
+      document.querySelector(".preview p").innerHTML += String.fromCharCode(code);
+  }
+  }
+
+  
+}
 
